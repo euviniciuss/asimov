@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-gray text-dark font-sans;
+  }
+
+  h1 {
+    @apply text-h1-mobile md:text-h1;
+  }
+
+  h2 {
+    @apply text-h2-mobile md:text-h2;
+  }
+
+  h3 {
+    @apply text-h3-mobile md:text-h3;
+  }
+
+  h4 {
+    @apply text-h4-mobile md:text-h4;
+  }
+
+  p {
+    @apply text-p-mobile md:text-p;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply mx-auto w-full max-w-app px-app-mobile lg:px-app-desktop;
+  }
+}
