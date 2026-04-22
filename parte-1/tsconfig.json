@@ -24,7 +24,7 @@
       "@public/*": ["./public/*"],
       "@presentation/*": ["./src/presentation/*"],
       "@flows/*": ["./src/presentation/flows/*"],
-      "@components/*": ["./src/presentation/components/*"],
+      "@components/*": ["./src/presentation/components/*"]
     }
   },
   "include": [

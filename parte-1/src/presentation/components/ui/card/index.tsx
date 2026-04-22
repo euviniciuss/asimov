@@ -1,7 +1,7 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-import { cardDescriptionStyles, cardStyles, cardTitleStyles } from "./styles";
-import type { ICardProps, ICardTextProps } from "./types";
+import { cardDescriptionStyles, cardStyles, cardTitleStyles } from './styles';
+import type { ICardProps, ICardTextProps } from './types';
 
 export function Card({ className, ...props }: ICardProps) {
   return <article className={cn(cardStyles(), className)} {...props} />;

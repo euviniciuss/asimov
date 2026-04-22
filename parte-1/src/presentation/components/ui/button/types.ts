@@ -1,7 +1,7 @@
-import type { VariantProps } from "class-variance-authority";
-import type { ButtonHTMLAttributes } from "react";
+import type { VariantProps } from 'class-variance-authority';
+import type { ButtonHTMLAttributes } from 'react';
 
-import type { buttonVariants } from "./styles";
+import type { buttonVariants } from './styles';
 
 export interface IButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,

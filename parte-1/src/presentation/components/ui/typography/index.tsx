@@ -1,12 +1,12 @@
-import { clsx } from "clsx";
+import { clsx } from 'clsx';
 
-import { typographyColorStyles, typographyVariantStyles } from "./styles";
-import type { ITypographyProps, TTypographyElement } from "./types";
+import { typographyColorStyles, typographyVariantStyles } from './styles';
+import type { ITypographyProps, TTypographyElement } from './types';
 
 export function Typography({
-  as = "p",
-  variant = "p",
-  color = "dark",
+  as = 'p',
+  variant = 'p',
+  color = 'dark',
   className,
   children,
   ...props
@@ -18,7 +18,7 @@ export function Typography({
       className={clsx(
         typographyVariantStyles({ variant }),
         typographyColorStyles({ color }),
-        className
+        className,
       )}
       {...props}
     >

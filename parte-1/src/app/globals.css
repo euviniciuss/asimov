@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-gray text-dark font-sans;
+    @apply bg-white text-dark font-sans;
   }
 
   h1 {
@@ -34,6 +34,6 @@
 
 @layer components {
   .app-container {
-    @apply mx-auto w-full max-w-app px-app-mobile lg:px-app-desktop;
+    @apply mx-auto w-full max-w-app px-app-mobile lg:pt-[60px] lg:px-app-desktop;
   }
 }
