@@ -1,34 +1,43 @@
 import { Button } from "@components/ui/button";
-import { Heading } from "@components/ui/heading";
 import { Typography } from "@components/ui/typography";
+import Image from "next/image";
 
-import { heroSectionStyles } from "./styles";
-import type { IHeroSectionProps } from "./types";
+import { heroContentStyles, heroImageStyles, heroSectionStyles } from "./styles";
 
-export function HeroSection({ message = "Hello World" }: IHeroSectionProps) {
+export function HeroSection() {
   return (
     <section className={heroSectionStyles()}>
-      <Typography as="h1" variant="h1-mobile">
-        {message}
-      </Typography>
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className={heroContentStyles()}>
+          <div className="flex flex-col gap-[35px]">
+            <Typography as="h1" variant="h1" className="text-black">
+              Navigating the digital landscape for success
+            </Typography>
 
-      <Button variant="primary">
-        <Typography as="p" variant="p" color="gray">
-          Book a consultation
-        </Typography>
-      </Button>
+            <Typography as="p" variant="p" className="text-black">
+              Our digital marketing agency helps businesses grow and succeed online through a range
+              of services including SEO, PPC, social media marketing, and content creation.
+            </Typography>
 
-      <div className="w-full flex flex-col">
-        <Heading variant="green">Search engine</Heading>
-        <Heading variant="green">optimization</Heading>
+            <Button variant="primary">
+              <Typography as="p" variant="p" color="gray">
+                Book a consultation
+              </Typography>
+            </Button>
+          </div>
+        </div>
+
+        <div className={heroImageStyles()}>
+          <Image
+            src="/illustrations/hero-Illustration.png"
+            alt="Digital marketing illustration"
+            width={600}
+            height={515}
+            className="w-full max-w-[600px] h-auto"
+            priority
+          />
+        </div>
       </div>
-
-      <Heading variant="dark" size="h1">
-        Search engine optimization
-      </Heading>
-      <Heading variant="white" size="h3">
-        Social media marketing
-      </Heading>
     </section>
   );
 }
