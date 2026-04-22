@@ -1,7 +1,8 @@
-import { Header } from '@/presentation/components/ui/header';
+import { Header } from '@components/ui/header';
 import { CompanySection } from './components/company-section';
 import { HeroSection } from './components/hero-section';
 import { ServicesSection } from './components/services-section';
+import { CTASection } from './components/cta-section';
 
 export function LandingPage() {
   return (
@@ -10,6 +11,7 @@ export function LandingPage() {
       <HeroSection />
       <CompanySection />
       <ServicesSection />
+      <CTASection />
     </main>
   );
 }
