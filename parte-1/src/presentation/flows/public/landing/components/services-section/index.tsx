@@ -1,10 +1,9 @@
 import { Typography } from '@components/ui/typography';
 import { Heading } from '@/presentation/components/ui/heading';
-import { servicesSectionStyles } from './styles';
 
 export function ServicesSection() {
   return (
-    <section className={servicesSectionStyles()}>
+    <section className="w-full">
       {/* Services Title */}
       <div className="w-full flex gap-10">
         <Heading size="h2" variant="green">
