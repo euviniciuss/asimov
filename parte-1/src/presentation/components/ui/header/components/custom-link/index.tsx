@@ -8,7 +8,7 @@ export function CustomLink({ href, children }: ICustomLinkProps) {
       <Typography
         as="p"
         variant="p"
-        className="text-black"
+        className="text-black text-xl"
       >
         {children}
       </Typography>

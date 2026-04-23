@@ -1,22 +1,3 @@
-import type { VariantProps } from 'class-variance-authority';
-import type { AnchorHTMLAttributes, ReactNode } from 'react';
+export type TBackgroundVariants = "light" | "alternative-light" | "dark" | "alternative-dark" | "green" | "alternative-green" | "transparent"
 
-import type { arrowLinkStyles } from './styles';
-
-export type TArrowLinkBg = 'dark' | 'green' | 'transparent';
-export type TArrowLinkIconBg = 'dark' | 'green' | 'none';
-
-export interface IArrowLinkProps
-  extends AnchorHTMLAttributes<HTMLAnchorElement>,
-    VariantProps<typeof arrowLinkStyles> {
-  children?: ReactNode;
-}
-
-export interface IArrowLinkIconProps {
-  variant?: TArrowLinkIconBg;
-  children: ReactNode;
-}
-
-export interface IArrowIconProps {
-  iconColor?: 'dark' | 'white';
-}
+export type TVariant = "solid" | "transparent"

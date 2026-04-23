@@ -3,6 +3,7 @@ import { CompanySection } from './components/company-section';
 import { HeroSection } from './components/hero-section';
 import { ServicesSection } from './components/services-section';
 import { CTASection } from './components/cta-section';
+import { CasesSection } from './components/cases-section';
 
 export function LandingPage() {
   return (
@@ -12,6 +13,7 @@ export function LandingPage() {
       <CompanySection />
       <ServicesSection />
       <CTASection />
+      <CasesSection />
     </main>
   );
 }
