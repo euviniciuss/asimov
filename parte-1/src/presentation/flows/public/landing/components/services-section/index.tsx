@@ -1,29 +1,52 @@
 'use client'
 
 import { Typography } from '@components/ui/typography';
-import { Heading } from '@/presentation/components/ui/heading';
-import { ArrowLink } from '@/presentation/components/ui/arrow-link';
+import { Heading } from '@components/ui/heading';
+import { ArrowLink } from '@components/ui/arrow-link';
+import { TitleSection } from '@components/ui/title-section';
+import { ServiceCard } from './components/service-card';
+import { href } from 'happy-dom/lib/PropertySymbol';
+import Image from 'next/image';
+import { SERVICE_CARD_CONTENT } from './constants';
 
 export function ServicesSection() {
   return (
-    <section className="w-full">
-      {/* Services Title */}
-      <div className="w-full flex gap-10">
-        <Heading size="h2" variant="green">
-          Services
-        </Heading>
-        <Typography as="p" variant="p" className="text-black max-w-[580px]">
-          At our digital marketing agency, we offer a range of services to help
-          businesses grow and succeed online. These services include:
-        </Typography>
+    <section className="w-full flex flex-col gap-20 py-40">
+      <TitleSection 
+        title='Services' 
+        description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
+      />
+
+      <div className='w-full flex flex-wrap gap-10 justify-between'>
+        {
+          SERVICE_CARD_CONTENT.map((content) => (
+            <ServiceCard.Root key={content.id} background={content.background}>
+              <ServiceCard.Content>
+                <div className='flex flex-col'>
+                  <Heading size='h3' variant={content.headingVariant}>
+                    {content.title}
+                  </Heading>
+                  <Heading size='h3' variant={content.headingVariant}>
+                    {content.subtitle}
+                  </Heading>
+                </div>
+
+                <ArrowLink.Root href={content.href} background={content.backgroundArrowLink} variant="solid">
+                  <ArrowLink.Icon />
+                  <ArrowLink.Text text="Learn more" />
+                </ArrowLink.Root>
+              </ServiceCard.Content>
+
+              <Image
+                src={content.image.src}
+                alt={content.image.alt}
+                width={content.image.width}
+                height={content.image.height}
+              />
+            </ServiceCard.Root>
+          ))
+        }
       </div>
-
-      {/* Services Content */}
-
-      <ArrowLink.Root href="/services" background='transparent' variant='solid'>
-        <ArrowLink.Icon />
-        <ArrowLink.Text text="Label" />
-      </ArrowLink.Root>
     </section>
   );
 }

@@ -6,7 +6,7 @@ import type { ITypographyProps, TTypographyElement } from './types';
 export function Typography({
   as = 'p',
   variant = 'p',
-  color = 'dark',
+  color,
   className,
   children,
   ...props
