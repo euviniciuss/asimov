@@ -34,6 +34,6 @@
 
 @layer components {
   .app-container {
-    @apply mx-auto w-full max-w-app px-app-mobile lg:pt-[60px] lg:px-app-desktop;
+    @apply mx-auto w-full max-w-app px-app-mobile lg:py-[60px] lg:px-app-desktop;
   }
 }

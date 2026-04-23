@@ -2,17 +2,11 @@ import { Button } from '@components/ui/button';
 import { Typography } from '@components/ui/typography';
 import Image from 'next/image';
 
-import {
-  heroContentStyles,
-  heroImageStyles,
-  heroSectionStyles,
-} from './styles';
-
 export function HeroSection() {
   return (
-    <section className={heroSectionStyles()}>
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className={heroContentStyles()}>
+    <section id="about" className='w-full'>
+      <div className="w-full flex flex-co justify-between md:flex-row gap-8">
+        <div className='flex-1 max-w-[531px]'>
           <div className="flex flex-col gap-[35px]">
             <Typography as="h1" variant="h1" className="text-black">
               Navigating the digital landscape for success
@@ -30,15 +24,13 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className={heroImageStyles()}>
-          <Image
-            src="/illustrations/hero-illustration.webp"
-            alt="Digital marketing illustration"
-            width={600}
-            height={515}
-            priority
-          />
-        </div>
+        <Image
+          src="/illustrations/hero-illustration.webp"
+          alt="Digital marketing illustration"
+          width={600}
+          height={515}
+          priority
+        />
       </div>
     </section>
   );

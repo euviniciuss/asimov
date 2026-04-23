@@ -9,7 +9,7 @@ import { Fragment } from 'react';
 
 export function CasesSection() {
   return (
-    <section className="w-full flex-col gap-20">
+    <section id="cases" className="w-full flex flex-col gap-20 py-[70px]">
       <TitleSection 
         title="Case Studies" 
         description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"

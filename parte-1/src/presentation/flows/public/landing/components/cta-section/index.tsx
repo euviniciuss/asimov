@@ -26,7 +26,6 @@ export function CTASection() {
             alt="Call to Action Illustration"
             width={359} 
             height={394}
-            className="h-auto w-full object-contain"
           />
         </div>
       </div>

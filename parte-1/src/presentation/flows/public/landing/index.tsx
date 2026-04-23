@@ -7,7 +7,7 @@ import { CasesSection } from './components/cases-section';
 
 export function LandingPage() {
   return (
-    <main className="min-h-screen app-container">
+    <main className="min-h-screen app-container flex flex-col gap-[70px]">
       <Header />
       <HeroSection />
       <CompanySection />

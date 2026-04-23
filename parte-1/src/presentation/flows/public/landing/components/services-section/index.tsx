@@ -1,17 +1,16 @@
 'use client'
 
-import { Typography } from '@components/ui/typography';
 import { Heading } from '@components/ui/heading';
 import { ArrowLink } from '@components/ui/arrow-link';
 import { TitleSection } from '@components/ui/title-section';
 import { ServiceCard } from './components/service-card';
-import { href } from 'happy-dom/lib/PropertySymbol';
+
 import Image from 'next/image';
 import { SERVICE_CARD_CONTENT } from './constants';
 
 export function ServicesSection() {
   return (
-    <section className="w-full flex flex-col gap-20 py-40">
+    <section id="services" className="w-full flex flex-col gap-20 py-[70px]">
       <TitleSection 
         title='Services' 
         description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'

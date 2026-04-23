@@ -10,7 +10,7 @@ export const SERVICE_CARD_CONTENT: IServiceCardContentProps[] = [
     href: '#services',
     backgroundArrowLink: 'dark',
     image: {
-      src: '/illustrations/services/search-engine-illustration.webp',
+      src: '/illustrations/services/search-engine.webp',
       alt: 'Ilustração representando otimização para mecanismos de busca',
       width: 210,
       height: 170,
