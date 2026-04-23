@@ -32,11 +32,10 @@ export function HeroSection() {
 
         <div className={heroImageStyles()}>
           <Image
-            src="/illustrations/hero-Illustration.png"
+            src="/illustrations/hero-illustration.webp"
             alt="Digital marketing illustration"
             width={600}
             height={515}
-            className="w-full max-w-[600px] h-auto"
             priority
           />
         </div>
