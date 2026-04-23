@@ -1,6 +1,6 @@
-import { ReactNode } from "react"
+import { ReactNode } from 'react';
 
 export interface ICustomLinkProps {
-  href: string
-  children: ReactNode
+  href: string;
+  children: ReactNode;
 }

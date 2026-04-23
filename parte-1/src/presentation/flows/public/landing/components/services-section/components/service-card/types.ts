@@ -2,7 +2,6 @@ import type { ReactNode } from 'react';
 
 export type TBackgroundCardVariants = 'light' | 'dark' | 'green';
 
-
 export interface IServiceCardContentProps {
   children: ReactNode;
   className?: string;

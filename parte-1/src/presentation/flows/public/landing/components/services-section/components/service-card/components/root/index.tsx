@@ -11,12 +11,7 @@ export function Root({
 }: IServiceCardRootProps) {
   return (
     <ServiceCardContext.Provider value={{ background }}>
-      <div
-        className={cn(
-          rootStyles({ background }),
-          className,
-        )}
-      >
+      <div className={cn(rootStyles({ background }), className)}>
         {children}
       </div>
     </ServiceCardContext.Provider>

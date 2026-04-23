@@ -1,7 +1,7 @@
-import { VariantProps } from "class-variance-authority";
-import { TBackgroundCardVariants } from "./components/service-card/types";
-import { headingVariants } from "@components/ui/heading/styles";
-import { TBackgroundVariants } from "@components/ui/arrow-link/types";
+import { VariantProps } from 'class-variance-authority';
+import { TBackgroundCardVariants } from './components/service-card/types';
+import { headingVariants } from '@components/ui/heading/styles';
+import { TBackgroundVariants } from '@components/ui/arrow-link/types';
 
 interface IImageProps {
   src: string;
@@ -16,7 +16,7 @@ export interface IServiceCardContentProps {
   subtitle: string;
   background: TBackgroundCardVariants;
   headingVariant: VariantProps<typeof headingVariants>['variant'];
-  href: string
-  backgroundArrowLink: TBackgroundVariants
+  href: string;
+  backgroundArrowLink: TBackgroundVariants;
   image: IImageProps;
 }

@@ -1,6 +1,4 @@
-
-
 export interface IArrowLinkTextProps {
-  text: string
-  className?: string
+  text: string;
+  className?: string;
 }

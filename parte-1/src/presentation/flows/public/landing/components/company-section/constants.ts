@@ -29,4 +29,4 @@ export const COMPANIES_LOGO = [
     src: '/assets/companies/zoom.svg',
     alt: 'Zoom',
   },
-]
+];

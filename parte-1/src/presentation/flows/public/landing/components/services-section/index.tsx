@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Heading } from '@components/ui/heading';
 import { ArrowLink } from '@components/ui/arrow-link';
@@ -11,40 +11,42 @@ import { SERVICE_CARD_CONTENT } from './constants';
 export function ServicesSection() {
   return (
     <section id="services" className="w-full flex flex-col gap-20 py-[70px]">
-      <TitleSection 
-        title='Services' 
-        description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
+      <TitleSection
+        title="Services"
+        description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
       />
 
-      <div className='w-full flex flex-wrap gap-10 justify-between'>
-        {
-          SERVICE_CARD_CONTENT.map((content) => (
-            <ServiceCard.Root key={content.id} background={content.background}>
-              <ServiceCard.Content>
-                <div className='flex flex-col'>
-                  <Heading size='h3' variant={content.headingVariant}>
-                    {content.title}
-                  </Heading>
-                  <Heading size='h3' variant={content.headingVariant}>
-                    {content.subtitle}
-                  </Heading>
-                </div>
+      <div className="w-full flex flex-wrap gap-10 justify-between">
+        {SERVICE_CARD_CONTENT.map((content) => (
+          <ServiceCard.Root key={content.id} background={content.background}>
+            <ServiceCard.Content>
+              <div className="flex flex-col">
+                <Heading size="h3" variant={content.headingVariant}>
+                  {content.title}
+                </Heading>
+                <Heading size="h3" variant={content.headingVariant}>
+                  {content.subtitle}
+                </Heading>
+              </div>
 
-                <ArrowLink.Root href={content.href} background={content.backgroundArrowLink} variant="solid">
-                  <ArrowLink.Icon />
-                  <ArrowLink.Text text="Learn more" />
-                </ArrowLink.Root>
-              </ServiceCard.Content>
+              <ArrowLink.Root
+                href={content.href}
+                background={content.backgroundArrowLink}
+                variant="solid"
+              >
+                <ArrowLink.Icon />
+                <ArrowLink.Text text="Learn more" />
+              </ArrowLink.Root>
+            </ServiceCard.Content>
 
-              <Image
-                src={content.image.src}
-                alt={content.image.alt}
-                width={content.image.width}
-                height={content.image.height}
-              />
-            </ServiceCard.Root>
-          ))
-        }
+            <Image
+              src={content.image.src}
+              alt={content.image.alt}
+              width={content.image.width}
+              height={content.image.height}
+            />
+          </ServiceCard.Root>
+        ))}
       </div>
     </section>
   );

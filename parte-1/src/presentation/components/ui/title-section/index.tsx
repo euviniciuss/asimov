@@ -1,6 +1,6 @@
-import { Heading } from "@components/ui/heading";
-import { Typography } from "@components/ui/typography";
-import { ITitleSectionProps } from "./types";
+import { Heading } from '@components/ui/heading';
+import { Typography } from '@components/ui/typography';
+import { ITitleSectionProps } from './types';
 
 export function TitleSection({ title, description }: ITitleSectionProps) {
   return (

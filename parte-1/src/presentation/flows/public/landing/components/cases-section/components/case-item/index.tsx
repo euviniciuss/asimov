@@ -1,6 +1,6 @@
-import { Typography } from '@components/ui/typography'
-import { ArrowLink } from '@components/ui/arrow-link'
-import { ICaseItemProps } from './types'
+import { Typography } from '@components/ui/typography';
+import { ArrowLink } from '@components/ui/arrow-link';
+import { ICaseItemProps } from './types';
 
 export function CaseItem({ description, href }: ICaseItemProps) {
   return (
@@ -14,5 +14,5 @@ export function CaseItem({ description, href }: ICaseItemProps) {
         <ArrowLink.Icon />
       </ArrowLink.Root>
     </div>
-  )
+  );
 }

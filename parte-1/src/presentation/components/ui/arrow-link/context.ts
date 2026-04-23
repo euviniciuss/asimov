@@ -1,21 +1,21 @@
-import { createContext, useContext } from "react"
-import { TBackgroundVariants, TVariant } from "./types"
+import { createContext, useContext } from 'react';
+import { TBackgroundVariants, TVariant } from './types';
 
 interface IArrowLinkContext {
-  background: TBackgroundVariants
-  variant: TVariant
+  background: TBackgroundVariants;
+  variant: TVariant;
 }
 
-const ArrowLinkContext = createContext<IArrowLinkContext | null>(null)
+const ArrowLinkContext = createContext<IArrowLinkContext | null>(null);
 
 export function useArrowLink() {
-  const context = useContext(ArrowLinkContext)
+  const context = useContext(ArrowLinkContext);
 
   if (!context) {
-    throw new Error("Use within ArrowLink.Root")
+    throw new Error('Use within ArrowLink.Root');
   }
 
-  return context
+  return context;
 }
 
-export default ArrowLinkContext
+export default ArrowLinkContext;

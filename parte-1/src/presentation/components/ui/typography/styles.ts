@@ -28,5 +28,4 @@ export const typographyColorStyles = cva('', {
       green: 'text-green',
     },
   },
- 
 });

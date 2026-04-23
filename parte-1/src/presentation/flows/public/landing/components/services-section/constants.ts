@@ -1,4 +1,4 @@
-import { IServiceCardContentProps } from "./types";
+import { IServiceCardContentProps } from './types';
 
 export const SERVICE_CARD_CONTENT: IServiceCardContentProps[] = [
   {

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { TBackgroundCardVariants } from "../../types";
+import { ReactNode } from 'react';
+import { TBackgroundCardVariants } from '../../types';
 
 export interface IServiceCardRootProps {
   background?: TBackgroundCardVariants;
