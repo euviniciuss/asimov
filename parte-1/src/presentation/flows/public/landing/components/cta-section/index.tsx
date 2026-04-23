@@ -20,14 +20,15 @@ export function CTASection() {
           </Button>
         </div>
 
-      <div className="absolute top-1/2 -translate-y-1/2 right-[135px]">
-        <Image
-          src='/illustrations/cta.webp'
-          alt="Call to Action Illustration"
-          width={359} 
-          height={394.27}
-        />
-      </div>
+        <div className="absolute top-1/2 -translate-y-1/2 right-[135px]">
+          <Image
+            src='/illustrations/cta.webp'
+            alt="Call to Action Illustration"
+            width={359} 
+            height={394}
+            className="h-auto w-full object-contain"
+          />
+        </div>
       </div>
     </section>
   );
