@@ -9,7 +9,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Asimov - Production Frontend',
+  title: 'Positivus - Production Frontend',
   description: 'Frontend escalavel com Next.js, TypeScript e Tailwind.',
 };
 
