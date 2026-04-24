@@ -1,4 +1,4 @@
-import { Button } from "@/presentation/components/ui/button";
+import { Button } from "../../../../../components/ui/button";
 import Image from "next/image";
 import { FeatureCard } from "../feature-card";
 import { FEATURE_CARD_CONTENT } from "./constants";
