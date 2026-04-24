@@ -1,0 +1,48 @@
+{
+	"name": "python-ai-hero",
+	"version": "0.1.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"prepare": "husky",
+		"lint": "biome check --write .",
+		"format": "biome format --write .",
+		"type-check": "tsc --noEmit",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"test:coverage": "vitest run --coverage"
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx,json}": [
+			"biome check --write --no-errors-on-unmatched"
+		]
+	},
+	"dependencies": {
+		"next": "16.2.4",
+		"react": "19.2.4",
+		"react-dom": "19.2.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.13",
+		"@tailwindcss/postcss": "^4",
+		"@testing-library/dom": "^10.4.1",
+		"@testing-library/jest-dom": "^6.9.1",
+		"@testing-library/react": "^16.3.2",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"@types/testing-library__jest-dom": "^5.14.9",
+		"@vitejs/plugin-react": "^4.7.0",
+		"babel-plugin-react-compiler": "1.0.0",
+		"happy-dom": "^20.9.0",
+		"husky": "^9.1.7",
+		"jsdom": "^27.0.1",
+		"lint-staged": "^16.4.0",
+		"tailwindcss": "^4",
+		"typescript": "^5",
+		"vitest": "^4.1.5"
+	}
+}
