@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/presentation/components/ui/button";
+import { Button } from "@components/ui/button";
 import { CustomLink } from "./components/custom-link";
 
-export const Header = () => {
+export function Header() {
 	return (
 		<nav className="fixed top-0 w-full border-b border-white/10 z-50 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
 			<div className="flex justify-between items-center w-full h-20 mx-auto max-w-360 px-8 lg:px-28">
