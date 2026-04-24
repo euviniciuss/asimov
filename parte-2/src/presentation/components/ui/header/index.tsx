@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import type React from "react";
-import { Button } from "@/presentation/components/ui/Button";
-import { CustomLink } from "./components/CustomLink";
+import { Button } from "@/presentation/components/ui/button";
+import { CustomLink } from "./components/custom-link";
 
-export const Header: React.FC = () => {
+export const Header = () => {
 	return (
 		<nav className="fixed top-0 w-full border-b border-white/10 z-50 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
-			<div className="flex justify-between items-center w-full h-20 mx-auto max-w-[1440px] px-8 lg:px-[112px]">
+			<div className="flex justify-between items-center w-full h-20 mx-auto max-w-360 px-8 lg:px-28">
 				<Link href="/">
-					<div className="relative w-[120px] h-[40px]">
+					<div className="relative w-40 h-15">
 						<Image src="/assets/logo.svg" alt="Asimov" fill className="object-contain" />
 					</div>
 				</Link>
@@ -25,7 +24,7 @@ export const Header: React.FC = () => {
 					<Button
 						variant="primary"
 						size="sm"
-						className="font-body uppercase text-[10px] tracking-[0.1em]"
+						className="font-body uppercase text-[10px] tracking-widest"
 					>
 						Matricule-se
 					</Button>

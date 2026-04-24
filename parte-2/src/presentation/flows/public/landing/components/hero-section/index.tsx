@@ -1,13 +1,12 @@
 import Image from "next/image";
-import type React from "react";
-import { Button } from "@/presentation/components/ui/Button";
+import { Button } from "@components/ui/button";
 import { FeatureCard } from "../feature-card";
+import { FEATURE_CARD_CONTENT } from "./constants";
 import { styles } from "./styles";
 
-export const HeroSection: React.FC = () => {
+export function HeroSection() {
 	return (
 		<section className={styles.section}>
-			{/* Left 3D Asset */}
 			<div className={styles.leftAsset}>
 				<div className={styles.leftAssetContainer}>
 					<Image
@@ -21,7 +20,6 @@ export const HeroSection: React.FC = () => {
 				</div>
 			</div>
 
-			{/* Content Canvas */}
 			<div className={styles.contentCanvas}>
 				<h1 className={styles.h1}>
 					Aprenda Python do zero e <br />
@@ -36,36 +34,19 @@ export const HeroSection: React.FC = () => {
 					<Button variant="secondary">Ver o que eu vou aprender</Button>
 				</div>
 
-				{/* Features Bento */}
 				<div className={styles.featuresBento}>
-					<FeatureCard
-						icon={<Image src="/icons/clock.svg" alt="Clock" width={24} height={24} />}
-						title="+40 horas"
-						subtitle="Conteúdo direto ao ponto"
-						iconColorClass="text-primary"
-					/>
-					<FeatureCard
-						icon={<Image src="/icons/brain.svg" alt="Brain" width={24} height={24} />}
-						title="Python + IA"
-						subtitle="Projetos desde o módulo 1"
-						iconColorClass="text-secondary"
-					/>
-					<FeatureCard
-						icon={<Image src="/icons/users.svg" alt="Users" width={24} height={24} />}
-						title="Comunidade"
-						subtitle="+20.000 alunos ativos"
-						iconColorClass="text-primary"
-					/>
-					<FeatureCard
-						icon={<Image src="/icons/verified.svg" alt="Verified" width={24} height={24} />}
-						title="Certificado"
-						subtitle="Reconhecido pelo mercado"
-						iconColorClass="text-secondary"
-					/>
+					{FEATURE_CARD_CONTENT.map((feature) => (
+						<FeatureCard
+							key={feature.title}
+							icon={<Image src={feature.icon} alt={feature.alt} width={24} height={24} />}
+							title={feature.title}
+							subtitle={feature.subtitle}
+							iconColorClass={feature.iconColorClass}
+						/>
+					))}
 				</div>
 			</div>
 
-			{/* Right 3D Asset */}
 			<div className={styles.rightAsset}>
 				<div className={styles.rightAssetContainer}>
 					<Image
@@ -79,4 +60,4 @@ export const HeroSection: React.FC = () => {
 			</div>
 		</section>
 	);
-};
+}
