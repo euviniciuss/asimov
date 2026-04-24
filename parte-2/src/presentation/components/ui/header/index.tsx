@@ -1,4 +1,4 @@
-import { Button } from "@components/ui/button";
+import { Button } from "@/presentation/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { CustomLink } from "./components/custom-link";

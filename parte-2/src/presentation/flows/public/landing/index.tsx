@@ -1,4 +1,4 @@
-import type React from "react";
+
 import { Header } from "@/presentation/components/ui/header";
 import { HeroSection } from "./components/hero-section";
 import { Particles } from "./components/particles";
