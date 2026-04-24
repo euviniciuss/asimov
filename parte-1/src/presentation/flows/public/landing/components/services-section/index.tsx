@@ -16,7 +16,7 @@ export function ServicesSection() {
         description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"
       />
 
-      <div className="w-full flex flex-wrap gap-10 justify-between">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
         {SERVICE_CARD_CONTENT.map((content) => (
           <ServiceCard.Root key={content.id} background={content.background}>
             <ServiceCard.Content>
