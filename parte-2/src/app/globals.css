@@ -185,6 +185,17 @@ body {
 	border: 1px solid color-mix(in srgb, white 10%, transparent);
 }
 
+.glass-card {
+	background: color-mix(in srgb, white 5%, transparent);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-top: 1px solid color-mix(in srgb, white 15%, transparent);
+	border-left: 1px solid color-mix(in srgb, white 15%, transparent);
+	border-bottom: 1px solid color-mix(in srgb, black 20%, transparent);
+	border-right: 1px solid color-mix(in srgb, black 20%, transparent);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
 /* ── Animação de Flutuação ── */
 @keyframes float {
 	0%,

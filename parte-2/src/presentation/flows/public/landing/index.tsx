@@ -1,12 +1,12 @@
 import type React from "react";
-import { TopNavBar } from "@/presentation/components/layout/TopNavBar";
-import { HeroSection } from "./components/HeroSection";
+import { Header } from "@/presentation/components/ui/header";
+import { HeroSection } from "./components/hero-section";
 
 export const LandingPage: React.FC = () => {
 	return (
-		<div className="bg-background text-on-background font-body overflow-x-hidden min-h-[1020px]">
+		<div className="bg-background text-on-background font-body overflow-x-hidden min-h-[1020px] relative z-0">
 			{/* Background Layers */}
-			<div className="fixed inset-0 pointer-events-none -z-20">
+			<div className="fixed inset-0 pointer-events-none -z-10">
 				{/* Grid Pattern */}
 				<div className="absolute inset-0 bg-grid opacity-50" />
 				{/* Large Glowing Orbs */}
@@ -35,7 +35,7 @@ export const LandingPage: React.FC = () => {
 				/>
 			</div>
 
-			<TopNavBar />
+			<Header />
 
 			<main className="relative pt-20 max-w-[1440px] mx-auto min-h-[940px]">
 				<HeroSection />
