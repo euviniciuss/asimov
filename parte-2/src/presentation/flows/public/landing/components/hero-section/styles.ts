@@ -4,7 +4,7 @@ export const styles = {
 		"hidden lg:block absolute left-[-80px] top-1/4 w-[480px] h-[480px] floating opacity-90 z-10",
 	leftAssetContainer: "w-full h-full flex items-center justify-center transform -rotate-12",
 	leftAssetImage: "w-full h-auto drop-shadow-[0_0_50px_rgba(55,113,163,0.4)]",
-	contentCanvas: "text-center max-w-4xl z-20 mt-[120px]",
+	contentCanvas: "text-center max-w-4xl z-20 mt-[120px] px-8 lg:px-0",
 	h1: "font-h1 text-[48px] text-white mb-8 leading-tight font-extrabold drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]",
 	p: "font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed text-2xl font-medium drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]",
 	buttonsWrapper: "flex flex-col sm:flex-row items-center justify-center gap-6 mb-16",

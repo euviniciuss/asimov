@@ -8,7 +8,7 @@ export function Header() {
 		<nav className="fixed top-0 w-full border-b border-white/10 z-50 bg-[#0a0a0c]/80 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
 			<div className="flex justify-between items-center w-full h-20 mx-auto max-w-360 px-8 lg:px-28">
 				<Link href="/">
-					<div className="relative w-40 h-15">
+					<div className="relative w-30 h-20 lg:w-40 lg:h-15">
 						<Image src="/assets/logo.svg" alt="Asimov" fill className="object-contain" />
 					</div>
 				</Link>
